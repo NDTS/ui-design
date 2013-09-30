@@ -1,21 +1,10 @@
 \documentclass[12pt,oneside]{article}
 
-% give use 1in margins on all borders
-\usepackage[margin=1in]{geometry}
+% pull in our defines
+\input{./defines.tex}
 
-% allow us to doublespace the lines
-\usepackage{setspace}
-
-% use superscript for citations instead of [1]
-\usepackage[superscript]{cite}
-
-% use 1. instead of [1] for the bibliography entries
-\makeatletter
-\renewcommand\@biblabel[1]{#1.}
-\makeatother
-
-% no spacing between named paragraphs
-\setlength{\parskip}{0cm}
+% pull in our layout
+\input{./layout.tex}
 
 \begin{document}
 
@@ -43,7 +32,7 @@ Here are some citation tests, just to show how simple the system is to use.
 Again, check the source for more information.
 
 This is a book\cite{book99} reference. This is an article\cite{journal99}
-reference. And this is an online\cite{url99} reference.
+reference. And this is an on-line\cite{website:github-ndts} reference.
 
 For fun, we'll start a new line, and reference the book\cite{book99} again.
 
@@ -51,25 +40,6 @@ For fun, we'll start a new line, and reference the book\cite{book99} again.
 \singlespace
 
 % our bibliography
-\begin{thebibliography}{99}
-
-\bibitem{book99}
-    Anonymous Author,
-    \emph{Book Title}
-    Source,
-    1999
-
-\bibitem{journal99}
-    Anonymous Author,
-        Another Author 2,
-        Third Author 3,
-    \emph{Article Title}
-    Journal Name,
-    Month 1999
-
-\bibitem{url99}
-    http://www.example.com/
-
-\end{thebibliography}
+\input{./bib.tex}
 
 \end{document}

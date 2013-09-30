@@ -1,8 +1,11 @@
-TEX = pdflatex -interactive=nonstopmode
+PDFLATEX = pdflatex -interactive=nonstopmode
+PDF = report progress-i
+BST = report
+TARGETS = $(patsubst %, %.bst, $(BST)) $(patsubst %, %.pdf, $(PDF))
 
-.PHONY: report.pdf
+.PHONY: all
 
-all: report.pdf
+all: $(TARGETS)
 
 # CUSTOM BUILD RULES
 %.tex: %.raw
@@ -12,9 +15,13 @@ all: report.pdf
 	./dat2tex $< > $@
 
 # MAIN LATEX RULE
+%.pdf: %.tex
+	latexmk -pdf -pdflatex="$(PDFLATEX)" -use-make $<
 
-report.pdf: report.tex
-	latexmk -pdf -pdflatex="$(TEX)" -use-make report.tex
+%.bst: %.dbj
+	latex $<
 
 clean:
 	latexmk -CA
+	rm -f *.bbl
+	rm -f *.bst
