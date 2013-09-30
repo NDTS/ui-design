@@ -1,0 +1,19 @@
+% give use 1in margins on all borders
+\usepackage[margin=1in]{geometry}
+
+% allow us to doublespace the lines
+\usepackage{setspace}
+
+% use superscript for citations instead of [1]
+\usepackage[superscript]{cite}
+
+% allow url in @misc bib entries
+\usepackage{hyperref}
+
+% use 1. instead of [1] for the bibliography entries
+\makeatletter
+\renewcommand\@biblabel[1]{#1.}
+\makeatother
+
+% no spacing between named paragraphs
+\setlength{\parskip}{0cm}
