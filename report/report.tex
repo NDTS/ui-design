@@ -1,0 +1,50 @@
+\documentclass[12pt,oneside]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+
+\begin{document}
+
+\input{./title.tex}
+
+\begin{center}
+{\large\bf \projectTitle \\ ~\\}
+{\teamName: \\\teamMembers}
+\end{center}
+
+\doublespace
+
+\paragraph{Introduction}
+This is a book reference.\cite{book99}
+
+\paragraph{Another Section}
+This is an article reference.\cite{journal99} And this is an online reference.\cite{url99} I really want
+This text to keep on wrapping... so I'm gonna keep on typing. Like a boss!
+
+\paragraph{Conclusion}
+For fun, we'll reference the book again.\cite{book99}
+
+\singlespace
+
+\begin{thebibliography}{99}
+
+\bibitem{book99}
+    Anonymous Author,
+    \emph{Book Title}
+    Source,
+    1999
+
+\bibitem{journal99}
+    Anonymous Author,
+        Another Author 2,
+        Third Author 3,
+    \emph{Article Title}
+    Journal Name,
+    Month 1999
+
+\bibitem{url99}
+    http://www.example.com/
+
+\end{thebibliography}
+
+\end{document}
