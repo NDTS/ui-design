@@ -1,31 +1,56 @@
 \documentclass[12pt,oneside]{article}
 
+% give use 1in margins on all borders
 \usepackage[margin=1in]{geometry}
+
+% allow us to doublespace the lines
 \usepackage{setspace}
+
+% use superscript for citations instead of [1]
+\usepackage[superscript]{cite}
+
+% use 1. instead of [1] for the bibliography entries
+\makeatletter
+\renewcommand\@biblabel[1]{#1.}
+\makeatother
+
+% no spacing between named paragraphs
+\setlength{\parskip}{0cm}
 
 \begin{document}
 
+% pull in our title page
 \input{./title.tex}
 
+% add our title, name, and members to the top page
 \begin{center}
 {\large\bf \projectTitle \\ ~\\}
 {\teamName: \\\teamMembers}
 \end{center}
 
+% doublespace the rest of the document
 \doublespace
 
 \paragraph{Introduction}
-This is a book reference.\cite{book99}
+This is a named paragraph. It starts with the title, which I supplied as
+Introduction, and then just continues on in its merry own way.
 
-\paragraph{Another Section}
-This is an article reference.\cite{journal99} And this is an online reference.\cite{url99} I really want
-This text to keep on wrapping... so I'm gonna keep on typing. Like a boss!
+If I wanted to add another paragraph, then I'd just create an empty line,
+and keep on writing. Check out the source to see this in action!
 
-\paragraph{Conclusion}
-For fun, we'll reference the book again.\cite{book99}
+\paragraph{Citations}
+Here are some citation tests, just to show how simple the system is to use. 
+Again, check the source for more information.
 
+This is a book\cite{book99} reference. This is an article\cite{journal99}
+reference. And this is an online\cite{url99} reference.
+
+For fun, we'll start a new line, and reference the book\cite{book99} again.
+
+% make sure we single-space the bibliography
 \singlespace
 
+% our bibliography
 \begin{thebibliography}{99}
 
 \bibitem{book99}
