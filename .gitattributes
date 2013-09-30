@@ -1,0 +1,27 @@
+# default to automatic line-ending changes
+* text=auto 
+
+# specific text file types
+*.bat    text eol=crlf
+*.sh     text eol=lf
+*.c      text
+*.cpp    text
+*.css    text
+*.js     text
+*.h      text
+*.hpp    text
+*.html   text diff=html
+*.py     text
+*.sh     text eol=lf
+*.sql    text
+Makefile text eol=lf
+
+# don't alter binary files
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+
+# word files
+*.docx diff=astextplain
+*.DOCX diff=astextplain
