@@ -17,24 +17,48 @@
 {\teamName: \\\teamMembers}
 \end{center}
 
-% doublespace the rest of the document
-\doublespace
+% pull in our journal
+\input{./journal.tex}
 
+\doublespace
 \paragraph{Introduction}
+\hfill \\
 Included within this progress report are the Interface Drawing and the UML
-Class Diagram for the \projectTitle.
+Class Diagram for the student web-based enrollment system.
+\singlespace
 
 \paragraph{Issues and Resolutions}
-Statement of all the issues we encountered and their resolutions.
+\begin{enumerate}
+    \item Disagreements upon the overall design and features.
+        \begin{enumerate}
+            \item Worked together in a friendly give-and-take environment until everyone was
+                  satisfied with the final product/draft.
+        \end{enumerate}
+    \item Abstract User class while creating the UML diagram.
+        \begin{enumerate}
+            \item We decided that only students would need to access the system.
+            \item As such, we didn't need a base User class for which Students,
+                  Teachers, and potentially Administrators would be derived.
+        \end{enumerate}
+    \item Time conflicts and constraints
+        \begin{enumerate}
+            \item Created a blocked schedule that clearly defined the times each member was
+                  unavailable to meet.
+            \item Used the blocked schedule to create meeting times.
+        \end{enumerate}
+\end{enumerate}
 
 \paragraph{Deliverables for Next Report}
-Statement of all the deliverables we'll have for the next report, which is due
-on November, 14. See our Milestones for more information.
+\begin{enumerate}
+    \item Implement our interface based on the designs and UML.
+    \item Create a rough draft of our presentation.
+    \item Create a rough draft of our final report.
+\end{enumerate}
 
 % make sure we single-space the bibliography
 \singlespace
 
 % our bibliography
-\input{./bib.tex}
+%\input{./bib.tex}
 
 \end{document}
