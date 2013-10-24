@@ -12,10 +12,10 @@ document.write(
 '    </div>' +
 '    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">' +
 '      <ul class="nav navbar-nav">' +
-'        <li><a href="#">Option #1</a></li>' +
-'        <li><a href="#">Option #2</a></li>' +
-'        <li><a href="#">Option #3</a></li>' +
-'        <li><a href="#">Option #4</a></li>' +
+'        <li><a href="finances.html">Finances</a></li>' +
+'        <li><a href="manage.html">Manage Classes</a></li>' +
+'        <li><a href="info.html">Update Info</a></li>' +
+'        <li><a href="logout.html">Logout</a></li>' +
 '      </ul>' +
 '    </nav>' +
 '  </div>' +
