@@ -36,7 +36,7 @@ body { padding-top: 70px; }
 
 /* Form Login Specific Stuff */
 .form-login {
-    padding: 15px;
+    padding: 5px;
     margin: 0 auto;
 }
 .form-login .form-control {

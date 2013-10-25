@@ -37,11 +37,35 @@
                     <h2>uConnect</h2>
                 </div>
                 <form class="form-login uc-small">
-                    <input type="text" class="form-control" placeholder="Username" autofocus />
-                    <input type="password" class="form-control" placeholder="Password" autofocus />
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-                    <span class="pull-right"><a href="forgot.html">Forgot your password?</a></span>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4 form-label">
+                                Username:
+                            </div>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" placeholder="Username" autofocus />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 form-label">
+                                Password:
+                            </div>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control" placeholder="Password" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                            </div>
+                            <div class="col-sm-8">
+                                <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                            </div>
+                        </div>
+                    </div>
                 </form>
+                <div class="container">
+                    <span class="pull-right"><a href="forgot.html">Forgot your password?</a></span>
+                </div>
                 <div class="uc-footer">
                     First time user? <a href="claim.html">Claim your account!</a>
                 </div>
@@ -54,5 +78,6 @@
         <!-- End Scripts -->
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
 </html>
 <!-- vim: set ts=4 sw=4 expandtab :-->

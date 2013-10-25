@@ -27,6 +27,9 @@
         <!-- Screen reader support -->
         <a class="sr-only" href="#content">Skip navigation</a>
 
+        <!-- Insert our header -->
+        <script type="text/javascript" src="js/header.js"></script>
+
         <!-- This specific page -->
         <div id="content" class="container">
             <div class="uc-box uc-medium">
@@ -34,8 +37,23 @@
                     <h2>Forgot Your Password</h2>
                 </div>
                 <form class="form-login uc-small">
-                    <input type="text" class="form-control" placeholder="Username" autofocus />
-					<button class="btn btn-lg btn-primary btn-block" type="submit">Send Email Recovery</button>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4 form-label">
+                                Username:
+                            </div>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" placeholder="Username" autofocus />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4 form-label">
+                            </div>
+                            <div class="col-sm-8">
+					            <button class="btn btn-lg btn-primary btn-block" type="submit">Send Email Recovery</button>
+                            </div>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -46,4 +64,6 @@
         <!-- End Scripts -->
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
 </html>
+<!-- vim: set ts=4 sw=4 expandtab :-->
