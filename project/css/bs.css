@@ -23,6 +23,11 @@ body { padding-top: 70px; }
     border-color: #F90;
 }
 
+/* Tables */
+.table {
+    margin-bottom: 0;
+}
+
 /* Form Login Specific Stuff */
 .form-login {
     padding: 15px;
