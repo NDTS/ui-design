@@ -1,56 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta information -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Course enrollment system for CSci 363" />
-    <meta name="authors" content="Michael Hlas, Zachary Maguire, Marshall Mattingly, Stephen Miller" />
+    <head>
+        <!-- Meta information -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Course enrollment system for CSci 363" />
+        <meta name="authors" content="Michael Hlas, Zachary Maguire, Marshall Mattingly, Stephen Miller" />
 
-    <!-- Title -->
-    <title>Course Enrollment</title>
+        <!-- Title -->
+        <title>Course Enrollment</title>
 
-    <!-- CSS -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <link href="css/bs.css" rel="stylesheet" />
+        <!-- CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <link href="css/bs.css" rel="stylesheet" />
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png" />
-    <link rel="shortcut icon" href="img/ico/favicon.png" />
+        <!-- Favicons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png" />
+        <link rel="shortcut icon" href="img/ico/favicon.png" />
 
-    <!-- Header Scripts -->
-  </head>
+        <!-- Header Scripts -->
+    </head>
 
-  <body style data-twttr-rendered="true">
-    <!-- Screen reader support -->
-    <a class="sr-only" href="#content">Skip navigation</a>
+    <body style data-twttr-rendered="true">
+        <!-- Screen reader support -->
+        <a class="sr-only" href="#content">Skip navigation</a>
 
-    <!-- Insert our header -->
-    <script type="text/javascript" src="js/header.js"></script>
+        <!-- Insert our header -->
+        <script type="text/javascript" src="js/header.js"></script>
 
-    <!-- This specific page -->
-    <div id="content" class="container">
-      <h1>Welcome</h1>
-      <p>
-        This is just a demonstration of a basic layout for our website. If you
-        try adjusting the size of your browser window, header menu should
-        collapse, allowing you to dropdown instead. Additionally, the footer
-        should become centered if your width is under 768px.
-      </p>
-      <p>
-        Give it a whirl. Building pages off of this should be relatively easy.
-        Though we may have to dink around with some CSS to get the look and
-        feel right.
-      </p>
-    </div>
+        <!-- This specific page -->
+        <div id="content" class="container">
+            <div class="uc-box uc-medium">
+                <h2 class="uc-box-header">uConnect</h2>
+                <form class="form-login uc-small">
+                    <input type="text" class="form-control" placeholder="Username" autofocus />
+                    <input type="password" class="form-control" placeholder="Password" autofocus />
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                    <span class="pull-right"><a href="forgot.html">Forgot your password?</a></span>
+                </form>
+                <h2 class="uc-box-footer">First time user? <a href="claim.html">Claim your account!</a></h2>
+            </div>
+        </div>
 
-    <!-- Insert our footer -->
-    <script type="text/javascript" src="js/footer.js"></script>
+        <!-- Insert our footer -->
+        <script type="text/javascript" src="js/footer.js"></script>
 
-    <!-- End Scripts -->
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- End Scripts -->
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </html>
-<!-- vim: set ts=2 sw=2 expandtab :-->
+<!-- vim: set ts=4 sw=4 expandtab :-->
