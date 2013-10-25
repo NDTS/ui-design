@@ -30,6 +30,7 @@ body { padding-top: 70px; }
     margin: 10px 0;
 }
 
+/* Max-width sizes */
 .uc-small {
     max-width: 330px;
 }
@@ -40,23 +41,30 @@ body { padding-top: 70px; }
     max-width: 1024px;
 }
 
+/* Box stuff */
 .uc-box {
     border: 1px solid black;
     margin: 0 auto;
     text-align: center;
 }
-.uc-box h2 {
-    padding: 10px;
+.uc-box .uc-header,
+.uc-box .uc-footer {
+    padding: 1em;
     margin: 0;
 }
-.uc-box h2.uc-box-header {
-    margin-bottom: 10px;
+.uc-box .uc-header h2,
+.uc-box .uc-footer h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.uc-box .uc-header {
+    margin-bottom: 1em;
     background-color: #090;
     border-bottom: 1px solid #060;
 }
-.uc-box h2.uc-box-footer {
-    margin-top: 15px;
+.uc-box .uc-footer {
+    margin-top: 1em;
     background-color: #CCC;
-    font-size: 1em;
     border-top: 1px solid #999;
 }
