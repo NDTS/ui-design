@@ -13,6 +13,16 @@ body { padding-top: 70px; }
     .bs-footer p { margin-bottom: 0; }
 }
 
+/* Buttons */
+.btn-pdf {
+    background-color: #F90;
+    border-color: #F60;
+}
+.btn-pdf:hover {
+    background-color: #F60;
+    border-color: #F90;
+}
+
 /* Form Login Specific Stuff */
 .form-login {
     padding: 15px;
