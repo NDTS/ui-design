@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta information -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Course enrollment system for CSci 363" />
+        <meta name="authors" content="Michael Hlas, Zachary Maguire, Marshall Mattingly, Stephen Miller" />
+
+        <!-- Title -->
+        <title>Update Personal Information</title>
+
+        <!-- CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+        <link href="css/bs.css" rel="stylesheet" />
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114-precomposed.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72-precomposed.png" />
+        <link rel="shortcut icon" href="img/ico/favicon.png" />
+
+        <!-- Header Scripts -->
+    </head>
+
+    <body style data-twttr-rendered="true">
+        <!-- Screen reader support -->
+        <a class="sr-only" href="#content">Skip navigation</a>
+
+        <!-- Insert our header -->
+        <script type="text/javascript" src="js/header.js"></script>
+
+        <!-- This specific page -->
+        <div id="content" class="container">
+            <div class="uc-box uc-medium rounded-border">
+                <div class="uc-header">
+                    <h2>Personal Information Update</h2>
+                </div>
+                <form class="form-login uc-small">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 form-label">
+                            Student ID:
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <input class="form-control" id="disabledInput" type="text" placeholder="1234567" disabled />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 form-label">
+                            Name:
+                        </div>
+                        <div class="col-sm-6 col-md-8 form-text">
+                            <input class="form-control" id="disabledInput" type="text" placeholder="John Philip Smith" disabled />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 form-label">
+                            Address:
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <input type="text" class="form-control" placeholder="Address" autofocus />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 form-label">
+                            City:
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <input type="text" class="form-control" placeholder="City" autofocus />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 form-label">
+                            Zip:
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Zip" />
+                                <div class="input-group-btn"> 
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        State <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right" role="menu">
+                                        <li><a href="#">MN</a></li>
+                                        <li><a href="#">MT</a></li>
+                                        <li><a href="#">ND</a></li>
+                                        <li><a href="#">SD</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 form-label">
+                            Primary Email:
+                        </div>
+                        <div class="col-sm-6 col-md-8 form-text">
+                            <input class="form-control" id="disabledInput" type="email" placeholder="first.last@my.und.edu" disabled />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 form-label">
+                            Secondary Email:
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <input type="email" class="form-control" placeholder="E-mail" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">Update</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="uc-footer">
+                    These are words! <a href="claim.html">Some Hyperlink</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="content" class="container">
+            <div class="uc-box uc-medium rounded-border">
+                <div class="uc-header">
+                    <h2>Username & Password</h2>
+                </div>
+                <form class="form-login uc-small">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 form-label">
+                            Current Username:
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <input class="form-control" id="disabledInput" type="text" placeholder="first.last" disabled />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 form-label">
+                            New Username:
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <input type="text" class="form-control" placeholder="Username" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 form-label">
+                            New Password:
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <input type="password" class="form-control" placeholder="Password" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 form-label">
+                            Confirm New Password:
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <input type="password" class="form-control" placeholder="Password" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                        </div>
+                        <div class="col-sm-6 col-md-8">
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">Update</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="uc-footer">
+                    These are words! <a href="claim.html">ANOTHER Hyperlink!</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Insert our footer -->
+        <script type="text/javascript" src="js/footer.js"></script>
+
+        <!-- End Scripts -->
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</html>
+<!-- vim: set ts=4 sw=4 expandtab :-->
