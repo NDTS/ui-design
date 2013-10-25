@@ -8,8 +8,55 @@ body { padding-top: 70px; }
     text-align: center;
     color: #777;
 }
-
 @media (min-width: 768px) {
     .bs-footer { text-align: left; }
     .bs-footer p { margin-bottom: 0; }
+}
+
+/* Form Login Specific Stuff */
+.form-login {
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-login .form-control {
+    position: relative;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-login .btn-primary {
+    margin: 10px 0;
+}
+
+.uc-small {
+    max-width: 330px;
+}
+.uc-medium {
+    max-width: 768px;
+}
+.uc-large {
+    max-width: 1024px;
+}
+
+.uc-box {
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+}
+.uc-box h2 {
+    padding: 10px;
+    margin: 0;
+}
+.uc-box h2.uc-box-header {
+    margin-bottom: 10px;
+    background-color: #090;
+    border-bottom: 1px solid #060;
+}
+.uc-box h2.uc-box-footer {
+    margin-top: 15px;
+    background-color: #CCC;
+    font-size: 1em;
+    border-top: 1px solid #999;
 }
