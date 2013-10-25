@@ -23,6 +23,12 @@ body { padding-top: 70px; }
     border-color: #F90;
 }
 
+/* Rows */
+.row {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 /* Tables */
 .table {
     margin-bottom: 0;
@@ -36,8 +42,6 @@ body { padding-top: 70px; }
 .form-login .form-control {
     position: relative;
     height: auto;
-    padding: 1em;
-	margin-bottom: .5em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -45,10 +49,21 @@ body { padding-top: 70px; }
 .form-login .btn-primary {
     margin: 10px 0;
 }
+.form-login .form-label {
+    font-weight: bold;
+}
+.form-login .form-label,
+.form-login .form-text {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .form-login .form-label { text-align: right; }
+    .form-login .form-text { text-align: left; }
+}
 
 /* Max-width sizes */
 .uc-small {
-    max-width: 330px;
+    max-width: 480px;
 }
 .uc-medium {
     max-width: 768px;
