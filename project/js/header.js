@@ -12,8 +12,9 @@ document.write(
 '    </div>' +
 '    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">' +
 '      <ul class="nav navbar-nav">' +
-'        <li><a href="finances.html">Finances</a></li>' +
+'        <li><a href="schedule.html">Schedule</a></li>' +
 '        <li><a href="manage.html">Manage Classes</a></li>' +
+'        <li><a href="finances.html">Finances</a></li>' +
 '        <li><a href="info.html">Update Info</a></li>' +
 '        <li><a href="logout.html">Logout</a></li>' +
 '      </ul>' +
