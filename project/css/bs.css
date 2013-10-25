@@ -96,3 +96,7 @@ body { padding-top: 70px; }
     background-color: #CCC;
     border-top: 1px solid #999;
 }
+.uc-box .uc-header .btn-default {
+    background-color: #DED;
+    border-color: #060;
+}
