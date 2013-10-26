@@ -1,5 +1,11 @@
 body { padding-top: 70px; }
 
+/* Headings */
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 .bs-footer {
     padding-top: 40px;
     padding-bottom: 30px;
@@ -16,22 +22,18 @@ body { padding-top: 70px; }
 /* Buttons */
 .btn-pdf {
     background-color: #F90;
-    border-color: #F60;
+    border-color: #333;
+    margin-right: 6px;
 }
 .btn-pdf:hover {
     background-color: #F60;
-    border-color: #F90;
+    border-color: #333;
 }
 
 /* Rows */
 .row {
     margin-top: 5px;
     margin-bottom: 5px;
-}
-
-/* Tables */
-.table {
-    margin-bottom: 0;
 }
 
 /* Form Login Specific Stuff */
@@ -54,11 +56,10 @@ body { padding-top: 70px; }
 }
 .form-login .form-label,
 .form-login .form-text {
-    text-align: center;
+    text-align: left;
 }
 @media (min-width: 768px) {
     .form-login .form-label { text-align: right; }
-    .form-login .form-text { text-align: left; }
 }
 
 /* Max-width sizes */
@@ -84,15 +85,18 @@ body { padding-top: 70px; }
     border: 1px solid black;
     margin: 0 auto;
     text-align: center;
-    overflow: hidden;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     border-collapse: inherit;
 }
+.uc-box .uc-box-main {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
 .uc-box .uc-header,
 .uc-box .uc-footer {
-    padding: 1em;
+    padding: .75em;
     margin: 0;
 }
 .uc-box .uc-header h2,
@@ -100,18 +104,44 @@ body { padding-top: 70px; }
     margin: 0;
     padding: 0;
 }
-
 .uc-box .uc-header {
-    margin-bottom: 1em;
     background-color: #090;
     border-bottom: 1px solid #060;
+    color: #444;
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
 }
 .uc-box .uc-footer {
-    margin-top: 1em;
     background-color: #CCC;
     border-top: 1px solid #999;
+    -webkit-border-radius: 0 0 8px 8px;
+    -moz-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
 }
 .uc-box .uc-header .btn-default {
     background-color: #DED;
     border-color: #060;
 }
+
+/* Table */
+.table {
+    margin-bottom: 6px;
+}
+
+.table thead > tr > th,
+.table tbody > tr > td,
+.table tfoot > tr > td {
+    vertical-align: middle;
+}
+
+.uc-box .text-center th,
+.uc-box .text-center td {
+    text-align: center;
+}
+.uc-box .table th.text-left,
+.uc-box .table td.text-left {
+    text-align: left;
+}
+
+/* vim: set ts=4 sw=4 expandtab: */

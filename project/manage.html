@@ -37,40 +37,44 @@
                     <h2>Manage Classes</h2>
                 </div>
 
-                <table class="table table-striped table-hover table-responsive table-condensed text-left">
-                    <thead>
-                        <tr>
-                            <th>Class #</th>
-                            <th>Name</th>
-                            <th>Section</th>
-                            <th>Credits</th>
-                            <th>Time</th>
-                            <th>Professor</th>
-                            <th> </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Chem 248</td>
-                            <td>Organic Chemistry</td>
-                            <td>01</td>
-                            <td>4</td>
-                            <td>MWF 8:00am - 8:50am</td>
-                            <td>Dr. Chemistry</td>
-                            <td><button class="btn btn-danger">Drop</button></td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="2"><button class="btn btn-default">Add Class</button></td>
-                            <td></td>
-                            <td>4</td>
-                            <td></td>
-                            <td colspan="2" class="text-right"><button class="btn btn-default btn-pdf">Download as PDF</button></td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover table-condensed text-center">
+                        <thead>
+                            <tr>
+                                <th>Class #</th>
+                                <th>Name</th>
+                                <th>Section</th>
+                                <th>Credits</th>
+                                <th>Time</th>
+                                <th>Professor</th>
+                                <th> </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Chem 248</td>
+                                <td>Organic Chemistry</td>
+                                <td>01</td>
+                                <td>4</td>
+                                <td>MWF 8:00am - 8:50am</td>
+                                <td>Dr. Chemistry</td>
+                                <td><button class="btn btn-danger">Drop</button></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" class="text-left"><a class="btn btn-default" href="add.html">Add Class</a></td>
+                                <td></td>
+                                <td>4</td>
+                                <td colspan="3"></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <a class="btn btn-default btn-pdf btn-xs hidden-print pull-right">
+                    <span class="glyphicon glyphicon-save"></span> Download PDF
+                </a>
         </div>
 
         <!-- Insert our footer -->

@@ -33,55 +33,51 @@
         <!-- This specific page -->
         <div id="content" class="container">
             <div class="uc-box">
-                <div class="uc-header row">
-                    <div class="col-xs-3 col-sm-2">
-                        <a class="btn btn-default" href="enroll.html">Enroll</a>
-                    </div>
-                    <div class="col-xs-6 col-sm-8">
-                        <h2>Weekly Schedule</h2>
-                    </div>
-                    <div class="col-xs-3 col-sm-2">
-                        <a class="btn btn-default" href="manage.html">Manage</a>
-                    </div>
+                <div class="uc-header">
+                    <a class="btn btn-default pull-left" href="enroll.html">Enroll</a>
+                    <a class="btn btn-default pull-right" href="manage.html">Manage</a>
+                    <h2>Weekly Schedule</h2>
                 </div>
 
-                <table class="table table-striped table-hover table-responsive table-condensed text-left">
-                    <thead>
-                        <tr>
-                            <th>Time</th>
-                            <th>Monday</th>
-                            <th>Tuesday</th>
-                            <th>Wednesday</th>
-                            <th>Thursday</th>
-                            <th>Friday</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>8:00 am</td>
-                            <td>Chem 248</td>
-                            <td> </td>
-                            <td>Chem 248</td>
-                            <td> </td>
-                            <td>Chem 248</td>
-                        </tr>
-                        <tr>
-                            <td>9:00 am</td>
-                            <td></td>
-                            <td>Math 207</td>
-                            <td></td>
-                            <td>Math 207 </td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="4"></td>
-                            <td colspan="4" class="text-right"><button class="btn btn-default btn-pdf">Download as PDF</button></td>
-                        </tr>
-                    </tfoot>
-                </table>
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover table-condensed text-center">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th class="visible-xs hidden-print"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>8:00 am</td>
+                                <td>Chem 248</td>
+                                <td></td>
+                                <td>Chem 248</td>
+                                <td></td>
+                                <td>Chem 248</td>
+                                <td class="visible-xs hidden-print">8:00 am</td>
+                            </tr>
+                            <tr>
+                                <td>9:00 am</td>
+                                <td></td>
+                                <td>Math 207</td>
+                                <td></td>
+                                <td>Math 207 </td>
+                                <td></td>
+                                <td class="visible-xs hidden-print">9:00 am</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
+                <a class="btn btn-default btn-pdf btn-xs hidden-print pull-right">
+                    <span class="glyphicon glyphicon-save"></span> Download PDF
+                </a>
             </div>
         </div>
 
