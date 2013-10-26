@@ -15,7 +15,8 @@ document.write(
 '        <li><a href="schedule.html">Schedule</a></li>' +
 '        <li><a href="manage.html">Manage Classes</a></li>' +
 '        <li><a href="finances.html">Finances</a></li>' +
-'        <li><a href="info.html">Update Info</a></li>' +
+'        <li><a href="transcript.html">Transcript</a></li>' +
+'        <li><a href="info.html">Info</a></li>' +
 '        <li><a href="logout.html">Logout</a></li>' +
 '      </ul>' +
 '    </nav>' +
