@@ -59,7 +59,10 @@ h2 {
     text-align: left;
 }
 @media (min-width: 768px) {
-    .form-login .form-label { text-align: right; }
+    .form-login .form-label {
+        text-align: right;
+        padding-top: 4px;
+    }
 }
 
 /* Max-width sizes */
