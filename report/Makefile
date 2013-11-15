@@ -1,5 +1,5 @@
 PDFLATEX = pdflatex -interactive=nonstopmode
-PDF = report progress-i
+PDF = report progress-i progress-ii
 BST = report
 TARGETS = $(patsubst %, %.bst, $(BST)) $(patsubst %, %.pdf, $(PDF))
 
