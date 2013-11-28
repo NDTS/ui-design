@@ -131,11 +131,8 @@ h2 {
 .table {
     margin-bottom: 6px;
 }
-.table-accordion {
+.table tr#class {
 	cursor: pointer;
-}
-.table-accordion tr td table{
-	cursor: default;
 }
 
 .table thead > tr > th,
