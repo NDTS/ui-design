@@ -131,6 +131,9 @@ h2 {
 .table {
     margin-bottom: 6px;
 }
+.table tr#class {
+	cursor: pointer;
+}
 
 .table thead > tr > th,
 .table tbody > tr > td,
