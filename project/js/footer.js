@@ -5,3 +5,17 @@ document.write(
 '  </div>' +
 '</footer>'
 );
+
+$('a, button.btn').click(function() {
+	$('body').css('cursor', 'wait');
+	var href;
+	if ($(this).is('a')) {
+		href = $(this).attr('href');
+	} else {
+		href = $(this).parent().attr('action');
+	}
+	setInterval(function() {
+		window.location = href;
+	}, 1500);
+	return false;
+});
