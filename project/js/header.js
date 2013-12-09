@@ -17,7 +17,7 @@ document.write(
 '        <li><a href="finances.html">Finances</a></li>' +
 '        <li><a href="transcript.html">Transcript</a></li>' +
 '        <li><a href="info.html">Info</a></li>' +
-'        <li><a href="logout.html">Logout</a></li>' +
+'        <li><a href="index.html">Logout</a></li>' +
 '      </ul>' +
 '    </nav>' +
 '  </div>' +
