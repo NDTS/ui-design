@@ -39,9 +39,7 @@ $('a, button.btn-block').click(function() {
             } else {
                 // show an error message, if needed
                 $("#ucMessage").html('Username or password incorrect. Try again or click the <a href="forgot.html">Forgot your password?</a> link.');
-                if ($("#ucMessage").is(":visible")) {
-                    $("#ucMessage").hide();
-                }
+                $("#ucMessage").hide();
                 $("#ucMessage").removeClass("alert alert-success alert-info alert-warning alert-danger").addClass("alert alert-danger").fadeIn(400);
 
                 // highlight fields that did not have any information
@@ -63,14 +61,13 @@ $('a, button.btn-block').click(function() {
         setTimeout(function() {
             // fade in and get the username
             $("#overlay").fadeOut(250);
+            $('body').css('cursor', 'auto');
             $username = $("#usernameInput").val();
 
             // remove all highlighting and error messages
             $usernameParent = $("#usernameInput").parent().parent(".form-group");
             $usernameParent.removeClass("has-warning has-error");
-            if ($("#ucMessage").is(":visible")) {
-                $("#ucMessage").hide();
-            }
+            $("#ucMessage").hide();
             $("#ucMessage").removeClass("alert alert-success alert-info alert-warning alert-danger").addClass("alert");
 
             // check success
