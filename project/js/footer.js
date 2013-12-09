@@ -1,4 +1,5 @@
 document.write(
+'<div id="overlay"></div>' +
 '<footer class="bs-footer" role="contentinfo">' +
 '  <div class="container">' +
 '    <p>Copyright (C) 2013 North Dakota Technical Solutions</p>' +
@@ -8,6 +9,7 @@ document.write(
 
 $('a, button.btn-block').click(function() {
 	$('body').css('cursor', 'wait');
+    $("#overlay").fadeIn(250);
 	if ($(this).is('a')) {
 		var href = $(this).attr('href');
 	    setTimeout(function() {
@@ -15,6 +17,7 @@ $('a, button.btn-block').click(function() {
 	    }, 1500);
     } else if ($(this).html() == "Login") {
         setTimeout(function() {
+            $("#overlay").fadeOut(250);
             $('body').css('cursor', 'auto');
             $logins = {
                 'marshall':'mattingly',
