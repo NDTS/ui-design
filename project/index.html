@@ -28,9 +28,6 @@
         <!-- Screen reader support -->
         <a class="sr-only" href="#content">Skip navigation</a>
 
-        <!-- Insert our header -->
-        <script type="text/javascript" src="js/header.js"></script>
-
         <!-- This specific page -->
         <div id="content" class="container">
             <div class="uc-box uc-medium rounded-border">
@@ -80,45 +77,6 @@
         <!-- End Scripts -->
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-$logins = {
-    'marshall':'mattingly',
-    'michael':'hlas',
-    'zachary':'maguire',
-    'stephen':'miller'
-};
-
-$("#loginForm").submit(function() {
-    $username = $("#usernameInput").val();
-    $password = $("#passwordInput").val();
-
-    // see if everything just works
-    if ($username && $password && $logins[$username] && $logins[$username] === $password) {
-        return true;
-    }
-
-    // show an error message, if needed
-    $("#ucMessage").html('Username or password incorrect. Try again or click the <a href="forgot.html">Forgot your password?</a> link.');
-    if ($("#ucMessage").is(":visible")) {
-        $("#ucMessage").hide();
-    }
-    $("#ucMessage").removeClass("alert alert-success alert-info alert-warning alert-danger").addClass("alert alert-danger").fadeIn(400);
-
-    // highlight fields that did not have any information
-    $usernameParent = $("#usernameInput").parent().parent(".form-group");
-    $passwordParent = $("#passwordInput").parent().parent(".form-group");
-    $usernameParent.removeClass("has-warning has-error");
-    $passwordParent.removeClass("has-warning has-error");
-    if (!$username) {
-        $usernameParent.addClass("has-error");
-    }
-    if (!$password) {
-        $passwordParent.addClass("has-error");
-    }
-
-    return false;
-});
-        </script>
 
         <!-- Insert our footer -->
         <script type="text/javascript" src="js/footer.js"></script>
