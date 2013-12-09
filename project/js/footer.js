@@ -102,7 +102,7 @@ $('a, button.btn-block').click(function() {
 			$confirmPasswordInput = $("#passwordConfirmInput").val();
 			$("#ucMessage").removeClass("alert alert-success alert-info alert-warning alert-danger").addClass("alert").hide();
 			
-			if ($idInput && $usernameInput && $passwordInput && $confirmPasswordInput && $passwordInput === $confirmPasswordInput) {	
+			if ($idInput && $usernameInput && $passwordInput && $confirmPasswordInput && $passwordInput === $confirmPasswordInput && !($usernameInput in $logins)) {	
 				$("#ucMessage").html("You have claimed your account! An email will be sent to verify your email address").addClass("alert-success");
 			} else {
 				$idParent = $("#idInput").parent().parent(".form-group");
@@ -129,6 +129,12 @@ $('a, button.btn-block').click(function() {
 				}
 				if ($errors) {
 					$errors = "You must enter your" + $errors;
+				}
+				if ($usernameInput in $logins) {
+					if ($errors) {
+						$errors += "<br />";
+					}
+					$errors += "That username is already taken. Plese select a new username";
 				}
 				if ($passwordInput !== $confirmPasswordInput) {
 					if ($errors) {
