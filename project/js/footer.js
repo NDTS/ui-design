@@ -21,7 +21,13 @@ $('a, button.btn-block').click(function() {
     if ($(this).is('a')) {
         var href = $(this).attr('href');
         setTimeout(function() {
-            window.location = href;
+            $("#overlay").fadeOut(250);
+            $('body').css('cursor', 'auto');
+
+            // don't redirect to this very page
+            if (href != window.location && href != "#") {
+                window.location = href;
+            }
         }, 1500);
     }
     // Login button
@@ -81,6 +87,13 @@ $('a, button.btn-block').click(function() {
                 $("#ucMessage").html('Username not found. Please call UND Tech Support for further assistance.');
                 $("#ucMessage").addClass("alert-danger").fadeIn(400);
             }
+        }, 1500);
+    }
+    // all other buttons
+    else {
+        setTimeout(function() {
+            $("#overlay").fadeOut(250);
+            $('body').css('cursor', 'auto');
         }, 1500);
     }
 
