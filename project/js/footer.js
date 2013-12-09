@@ -8,23 +8,27 @@ document.write(
 );
 
 $('a, button.btn-block').click(function() {
-	$('body').css('cursor', 'wait');
+    $('body').css('cursor', 'wait');
     $("#overlay").fadeIn(250);
-	if ($(this).is('a')) {
-		var href = $(this).attr('href');
-	    setTimeout(function() {
-		    window.location = href;
-	    }, 1500);
-    } else if ($(this).html() == "Login") {
+    $logins = {
+        'marshall':'mattingly',
+        'michael':'hlas',
+        'zachary':'maguire',
+        'stephen':'miller'
+    };
+
+    // linnks
+    if ($(this).is('a')) {
+        var href = $(this).attr('href');
+        setTimeout(function() {
+            window.location = href;
+        }, 1500);
+    }
+    // Login button
+    else if ($(this).html() == "Login") {
         setTimeout(function() {
             $("#overlay").fadeOut(250);
             $('body').css('cursor', 'auto');
-            $logins = {
-                'marshall':'mattingly',
-                'michael':'hlas',
-                'zachary':'maguire',
-                'stephen':'miller'
-            };
 
             $username = $("#usernameInput").val();
             $password = $("#passwordInput").val();
@@ -54,6 +58,34 @@ $('a, button.btn-block').click(function() {
             }
         }, 1500);
     }
+    // recovery button
+    else if ($(this).html() == "Send Email Recovery") { 
+        setTimeout(function() {
+            // fade in and get the username
+            $("#overlay").fadeOut(250);
+            $username = $("#usernameInput").val();
 
-	return false;
+            // remove all highlighting and error messages
+            $usernameParent = $("#usernameInput").parent().parent(".form-group");
+            $usernameParent.removeClass("has-warning has-error");
+            if ($("#ucMessage").is(":visible")) {
+                $("#ucMessage").hide();
+            }
+            $("#ucMessage").removeClass("alert alert-success alert-info alert-warning alert-danger").addClass("alert");
+
+            // check success
+            if ($username && $logins[$username]) {
+                $("#ucMessage").html('An email has been sent to your school and personal address. Please follow the instructions to reset your password.');
+                $("#ucMessage").addClass("alert-success").fadeIn(400);
+            }
+            // show errors 
+            else {
+                $usernameParent.addClass("has-error");
+                $("#ucMessage").html('Username not found. Please call UND Tech Support for further assistance.');
+                $("#ucMessage").addClass("alert-danger").fadeIn(400);
+            }
+        }, 1500);
+    }
+
+    return false;
 });
