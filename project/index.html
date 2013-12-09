@@ -36,22 +36,22 @@
                 <div class="uc-header">
                     <h2>uConnect</h2>
                 </div>
-                <form class="form-login uc-small">
+                <form class="form-login uc-small" id="loginForm">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-sm-4 form-label">
+                        <div class="row form-group">
+                            <div class="col-sm-4 control-label form-label">
                                 Username:
                             </div>
                             <div class="col-sm-8">
-                                <input type="text" class="form-control" placeholder="Username" autofocus />
+                                <input type="text" class="form-control" placeholder="Username" name="username" id="usernameInput" autofocus />
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-4 form-label">
+                        <div class="row form-group">
+                            <div class="col-sm-4 control-label form-label">
                                 Password:
                             </div>
                             <div class="col-sm-8">
-                                <input type="password" class="form-control" placeholder="Password" />
+                                <input type="password" class="form-control" placeholder="Password" name="password" id="passwordInput" />
                             </div>
                         </div>
                         <div class="row">
@@ -64,6 +64,10 @@
                     </div>
                 </form>
                 <div class="container">
+                    <div class="uc-message" id="ucMessage">
+                    </div>
+                </div>
+                <div class="container">
                     <span class="pull-right"><a href="forgot.html">Forgot your password?</a></span>
                 </div>
                 <div class="uc-footer">
@@ -72,12 +76,51 @@
             </div>
         </div>
 
-        <!-- Insert our footer -->
-        <script type="text/javascript" src="js/footer.js"></script>
-
         <!-- End Scripts -->
         <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+$logins = {
+    'marshall':'mattingly',
+    'michael':'hlas',
+    'zachary':'maguire',
+    'stephen':'miller'
+};
+
+$("#loginForm").submit(function() {
+    $username = $("#usernameInput").val();
+    $password = $("#passwordInput").val();
+
+    // see if everything just works
+    if ($username && $password && $logins[$username] && $logins[$username] === $password) {
+        return true;
+    }
+
+    // show an error message, if needed
+    $("#ucMessage").html('Username or password incorrect. Try again or click the <a href="forgot.html">Forgot your password?</a> link.');
+    if ($("#ucMessage").is(":visible")) {
+        $("#ucMessage").hide();
+    }
+    $("#ucMessage").removeClass("alert alert-success alert-info alert-warning alert-danger").addClass("alert alert-danger").fadeIn(400);
+
+    // highlight fields that did not have any information
+    $usernameParent = $("#usernameInput").parent().parent(".form-group");
+    $passwordParent = $("#passwordInput").parent().parent(".form-group");
+    $usernameParent.removeClass("has-warning has-error");
+    $passwordParent.removeClass("has-warning has-error");
+    if (!$username) {
+        $usernameParent.addClass("has-error");
+    }
+    if (!$password) {
+        $passwordParent.addClass("has-error");
+    }
+
+    return false;
+});
+        </script>
+
+        <!-- Insert our footer -->
+        <script type="text/javascript" src="js/footer.js"></script>
     </body>
 </html>
 <!-- vim: set ts=4 sw=4 expandtab :-->
