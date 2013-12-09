@@ -36,36 +36,36 @@
                 </div>
                 <form class="form-login uc-small">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6 col-md-5 form-label">
+                        <div class="row form-group">
+                            <div class="col-sm-6 col-md-5 control-label form-label">
                                 Student ID:
                             </div>
                             <div class="col-sm-6 col-md-7">
-                                <input type="text" class="form-control" placeholder="Student ID" autofocus />
+                                <input type="text" class="form-control" id="idInput" placeholder="Student ID" autofocus />
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-6 col-md-5 form-label">
+                        <div class="row form-group">
+                            <div class="col-sm-6 col-md-5 control-label form-label">
                                 Username:
                             </div>
                             <div class="col-sm-6 col-md-7">
-                                <input type="text" class="form-control" placeholder="Username" />
+                                <input type="text" class="form-control" id="usernameInput" placeholder="Username" />
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-6 col-md-5 form-label">
+                        <div class="row form-group">
+                            <div class="col-sm-6 col-md-5 control-label form-label">
                                 Password:
                             </div>
                             <div class="col-sm-6 col-md-7">
-					            <input type="password" class="form-control" placeholder="Password" />
+					            <input type="password" class="form-control" id="passwordInput" placeholder="Password" />
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-6 col-md-5 form-label">
+                        <div class="row form-group">
+                            <div class="col-sm-6 col-md-5 control-label form-label">
                                 Confirm Password:
                             </div>
                             <div class="col-sm-6 col-md-7">
-					            <input type="password" class="form-control" placeholder="Confirm Password" />
+					            <input type="password" class="form-control" id="passwordConfirmInput" placeholder="Confirm Password" />
                             </div>
                         </div>
                         <div class="row">
@@ -77,6 +77,10 @@
                         </div>
                     </div>
                 </form>
+				<div class="container">
+                    <div class="uc-message alert alert-danger" id="ucMessage">
+                    </div>
+                </div>
             </div>
         </div>
 
