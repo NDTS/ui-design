@@ -150,4 +150,14 @@ h2 {
     text-align: left;
 }
 
+#overlay {
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99998;
+}
 /* vim: set ts=4 sw=4 expandtab: */
