@@ -6,7 +6,7 @@ document.write(
 '</footer>'
 );
 
-$('a, button.btn').click(function() {
+$('a, button.btn-block').click(function() {
 	$('body').css('cursor', 'wait');
 	var href;
 	if ($(this).is('a')) {
